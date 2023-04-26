@@ -4,11 +4,13 @@
 
 body{
     background-color: rgb(40, 40, 40);
-    font-size: 14px;
+    font-size: 12px;
     font-family: $font-text;
     header{
         text-align: center;
         font-size: 25px;
+        font-weight: 700;
+        text-decoration: underline;
         margin-top: 15px;
         color: white;
     }
@@ -21,6 +23,8 @@ body{
     }
     .header_container{
         background-color: rgb(150, 150, 150);
+        font-size: 14px;
+        font-weight: 700;
         max-width: 100%;
         display: grid;
         grid-template-columns: 60% 15% 25%;
