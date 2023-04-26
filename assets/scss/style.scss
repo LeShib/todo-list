@@ -1,0 +1,60 @@
+@import './vendors/reset';
+@import './utils/variables';
+@import './utils/mixins';
+
+body{
+    background-color: rgb(40, 40, 40);
+    font-size: 16px;
+    font-family: $font-text;
+    header{
+        text-align: center;
+        font-size: 25px;
+        margin-top: 15px;
+        color: white;
+    }
+    form{
+        text-align: center;
+        color: white;
+    }
+    main{
+        margin-top: 20px;
+    }
+    .header_container{
+        background-color: rgb(150, 150, 150);
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 60% 15% 25%;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 2.5px;
+        border: black solid 1px;
+        .cb-header{
+            border-left: black solid 1px;
+        }
+        span{
+            align-self: center;
+        }
+        .but-header{
+            border-left: black solid 1px;
+        }
+    }
+    section{
+        background-color: rgb(150, 150, 150);
+        margin-left: 10px;
+        margin-right: 10px;
+        ul{
+            li{
+                display: grid;
+                grid-template-columns: 60% 15% 25%;
+                text-align: center;
+                border: black solid 1px ;
+                // padding-top: 5px;
+                div{
+                    border-left: black solid 1px;
+                }
+            }
+        }
+    }
+}
