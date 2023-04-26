@@ -55,7 +55,7 @@ table {
 
 body {
   background-color: rgb(40, 40, 40);
-  font-size: 16px;
+  font-size: 14px;
   font-family: "Bruno Ace", cursive;
 }
 body header {
@@ -105,4 +105,7 @@ body section ul li {
 }
 body section ul li div {
   border-left: black solid 1px;
+}
+body section ul li span {
+  align-self: center;
 }

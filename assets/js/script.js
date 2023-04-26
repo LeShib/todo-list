@@ -14,6 +14,7 @@ function createListItem(task) {
     let listItem = document.createElement("li");
     listItem.setAttribute("id", "task " + task.id);
     listItem.setAttribute("class", "task " + task.id);
+    let span = document.createElement("span");
     let text = document.createTextNode(task.taskLabel);
     // Créer la checkbox pour marquer les tâches complétées
     let divCb = document.createElement("div");
@@ -43,9 +44,10 @@ function createListItem(task) {
         }
         updateTasks();
     });
+    span.appendChild(text);
     divCb.appendChild(checkbox)
     divBut.appendChild(button);
-    listItem.appendChild(text);
+    listItem.appendChild(span);
     listItem.appendChild(divCb);
     listItem.appendChild(divBut);
     return listItem;

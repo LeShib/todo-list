@@ -4,7 +4,7 @@
 
 body{
     background-color: rgb(40, 40, 40);
-    font-size: 16px;
+    font-size: 14px;
     font-family: $font-text;
     header{
         text-align: center;
@@ -53,6 +53,9 @@ body{
                 // padding-top: 5px;
                 div{
                     border-left: black solid 1px;
+                }
+                span{
+                    align-self: center;
                 }
             }
         }
