@@ -2,7 +2,6 @@
 import { list, allTasks } from "./variables.js";
 let id = allTasks.length > 0 ? allTasks.reduce((maxId, task) => Math.max(maxId, task.id), 0) + 1 : 0;
 
-
 // Fonctions
 import { createListItem } from "./create.js";
 import { updateTasks } from "./display.js";

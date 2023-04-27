@@ -16,7 +16,7 @@ export function displayAllTasks(){
 
 // Mettre à jour la liste des tâches dans le stockage local
 export function updateTasks() {
-    // Enregistrer toutes les tâches dans le stockage local
+    // Enregistrer les tâches dans le stockage local
     localStorage.setItem("LIST", JSON.stringify(allTasks));
     // Réafficher toutes les tâches
     displayAllTasks();

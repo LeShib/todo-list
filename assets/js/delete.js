@@ -7,7 +7,7 @@ export function deleteCompletedTasks(){
     // Sélectionner tous les éléments avec la classe "completed"
     var completedTasks = document.querySelectorAll(".completed");
     completedTasks.forEach(function(task) {
-        // Supprimer la tâche de la liste (allTasks)
+        // Supprimer la tâche du tableau (allTasks)
         let deletedTaskIndex = allTasks.findIndex(t => t.id === parseInt(task.id.split(" ")[1]));
         if (deletedTaskIndex !== -1) {
             allTasks.splice(deletedTaskIndex, 1);
