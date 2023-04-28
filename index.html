@@ -9,7 +9,7 @@
     <title>To-do list</title>
 </head>
 <body>
-    <header id="header" class="header">
+    <header>
         <h1>Liste des tâches à réaliser</h1>
     </header>
     <main id="main" class="main">
@@ -19,14 +19,14 @@
                 <button type="submit" class="add_button">Ajouter</button>
             </span>
         </form>
-        <div class="header_container" id="header-container">
-            <span class="task-header">Tâche à réaliser</span>
-            <span class="cb-header">État</span>
-            <span class="but-header"><button id="delete-button" class="delete_button">supprimer les tâches complétées</button>
+        <div class="listHeader" id="listHeader">
+            <span class="listHeader__task">Tâche à réaliser</span>
+            <span class="listHeader__state">État</span>
+            <span class="listHeader__delete"><button id="delete-button" class="listHeader__delete__btn">supprimer les tâches complétées</button>
             </span>
         </div>
         <section class="list_container" id="list-container">
-            <ul id="list" class="list_container"></ul>
+            <ul id="list" class="list"></ul>
         </section>
     </main>
     <footer id="footer" class="footer"></footer>

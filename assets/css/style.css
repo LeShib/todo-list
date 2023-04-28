@@ -70,10 +70,20 @@ body form {
   text-align: center;
   color: white;
 }
+body form input {
+  border-radius: 6px;
+}
+body form button {
+  background: #DFDEDF;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+  color: #6E6D70;
+  border-radius: 6px;
+  align-self: center;
+}
 body main {
   margin-top: 20px;
 }
-body .header_container {
+body .listHeader {
   background-color: rgb(150, 150, 150);
   font-size: 14px;
   font-weight: 700;
@@ -86,20 +96,29 @@ body .header_container {
   margin-right: 10px;
   margin-bottom: 2.5px;
   border: black solid 1px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
 }
-body .header_container .cb-header {
-  border-left: black solid 1px;
-}
-body .header_container span {
+body .listHeader span {
   align-self: center;
 }
-body .header_container .but-header {
+body .listHeader__delete {
+  border-left: black solid 1px;
+}
+body .listHeader__delete__btn {
+  background: #6E6D70;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+  color: #DFDEDF;
+  border-radius: 6px;
+}
+body .listHeader__state {
   border-left: black solid 1px;
 }
 body section {
   background-color: rgb(150, 150, 150);
   margin-left: 10px;
   margin-right: 10px;
+  border-radius: 0 0 5px 5px;
 }
 body section ul li {
   display: grid;
@@ -109,7 +128,17 @@ body section ul li {
 }
 body section ul li div {
   border-left: black solid 1px;
+  align-self: center;
+}
+body section ul li div button {
+  background: #6E6D70;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+  color: #DFDEDF;
+  border-radius: 6px;
 }
 body section ul li span {
   align-self: center;
+}
+body section ul li:last-child {
+  border-radius: 0 0 5px 5px;
 }
